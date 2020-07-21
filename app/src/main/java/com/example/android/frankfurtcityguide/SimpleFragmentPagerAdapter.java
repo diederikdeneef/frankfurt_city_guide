@@ -1,11 +1,14 @@
 package com.example.android.frankfurtcityguide;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
 public class SimpleFragmentPagerAdapter extends androidx.fragment.app.FragmentPagerAdapter {
+    final int NUM_PAGES = 5;
+    private String[] tabTitles = new String[] {"Sites", "Musea", "Theatre", "Outdoor", "Eating"};
 
     // Constructor
     public SimpleFragmentPagerAdapter(@NonNull FragmentManager fm, int behavior) {
@@ -30,6 +33,12 @@ public class SimpleFragmentPagerAdapter extends androidx.fragment.app.FragmentPa
 
     @Override
     public int getCount() {
-        return 5;
+        return NUM_PAGES;
+    }
+
+    @Nullable
+    @Override
+    public CharSequence getPageTitle(int position) {
+        return tabTitles[position];
     }
 }
