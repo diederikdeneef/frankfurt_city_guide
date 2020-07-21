@@ -6,8 +6,8 @@
 
     <ImageView
         android:id="@+id/image"
-        android:layout_width="88dp"
-        android:layout_height="88dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toStartOf="@id/german_description"
         app:layout_constraintTop_toTopOf="parent"
@@ -17,18 +17,23 @@
         android:id="@+id/german_description"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:text="placeholder"
         app:layout_constraintStart_toEndOf="@id/image"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/english_description" />
+        app:layout_constraintBottom_toTopOf="@id/english_description"
+        app:layout_constraintVertical_weight="1"
+        style="@style/DescriptionTitle"/>
 
     <TextView
         android:id="@+id/english_description"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:text="placeholder"
         app:layout_constraintStart_toStartOf="@id/german_description"
         app:layout_constraintEnd_toEndOf="@id/german_description"
         app:layout_constraintTop_toBottomOf="@id/german_description"
-        app:layout_constraintBottom_toBottomOf="parent" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_weight="2"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

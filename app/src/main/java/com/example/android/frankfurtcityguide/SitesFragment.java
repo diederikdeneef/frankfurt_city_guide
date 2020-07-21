@@ -65,28 +65,24 @@ public class SitesFragment extends Fragment {
         // Inflate the layout for this fragment
         View rootView = inflater.inflate(R.layout.fragment_sites, container, false);
 
-//        String[] data = new String[50];
-//        for (int i = 1; i < 50; i++) {
-//            data[i] = "bladiebla " + i;
-//        }
-
+        // Data to populate the recyclerview
         ArrayList<Attraction> attractions = new ArrayList<>();
         attractions.add(new Attraction("Römerberg", "Romer"));
-        attractions.add(new Attraction("Römerberg", "Romer"));
-        attractions.add(new Attraction("Römerberg", "Romer"));
-        attractions.add(new Attraction("Römerberg", "Romer"));
-        attractions.add(new Attraction("Römerberg", "Romer"));
-        attractions.add(new Attraction("Römerberg", "Romer"));
-        attractions.add(new Attraction("Römerberg", "Romer"));
-        attractions.add(new Attraction("Römerberg", "Romer"));
-        attractions.add(new Attraction("Römerberg", "Romer"));
-        attractions.add(new Attraction("Römerberg", "Romer"));
-        attractions.add(new Attraction("Römerberg", "Romer"));
-        attractions.add(new Attraction("Römerberg", "Romer"));
-        attractions.add(new Attraction("Römerberg", "Romer"));
-        attractions.add(new Attraction("Römerberg", "Romer"));
-        attractions.add(new Attraction("Römerberg", "Romer"));
-        attractions.add(new Attraction("Römerberg", "Romer"));
+        attractions.add(new Attraction("Dom St. Bartolomaus", "Cathedral of St. Bartholomew"));
+        attractions.add(new Attraction("Eiserne Steg", "Iron Bridge"));
+        attractions.add(new Attraction("Eschenheimer Tor", "Eschenheimer Tower"));
+        attractions.add(new Attraction("Main Turm", "Main Tower"));
+        attractions.add(new Attraction("Hauptwache", "Hauptwache"));
+        attractions.add(new Attraction("Kleinmarkthalle", "Small market hall"));
+        attractions.add(new Attraction("SachsenHausen", "Sachsenhausen"));
+        attractions.add(new Attraction("Alte Oper", "The Old Opera House"));
+        attractions.add(new Attraction("Palmengarten", "Botanical Garden"));
+        attractions.add(new Attraction("Alte Nikolaikirche", "Old Nicholas Church"));
+        attractions.add(new Attraction("Bockenheimerwarte", ""));
+        attractions.add(new Attraction("Paulskirche", "St. Paul's Church"));
+        attractions.add(new Attraction("Rathaus Seckbach", "City Council"));
+        attractions.add(new Attraction("Huhnermarkt", "Chicken market"));
+        attractions.add(new Attraction("Goethe Hause", "Goethe House"));
 
 
         // Create the recycler view
