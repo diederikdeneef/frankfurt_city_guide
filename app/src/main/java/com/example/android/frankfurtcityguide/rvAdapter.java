@@ -35,9 +35,8 @@ public class rvAdapter extends RecyclerView.Adapter<rvAdapter.ViewHolder> {
     @Override
     public void onBindViewHolder(@NonNull rvAdapter.ViewHolder holder, int position) {
         Attraction attraction = mData.get(position);
-        //String attraction = mData.get(position).getmAttractionDE();
-        holder.attractionName.setText(attraction.getmAttractionDE());
-        holder.attractionDescription.setText(attraction.getmAttractionEN());
+        holder.attractionName.setText(attraction.getmAttractionName());
+        holder.attractionDescription.setText(attraction.getmAttractionDescription());
     }
 
     // total number of rows

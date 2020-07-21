@@ -2,31 +2,70 @@ package com.example.android.frankfurtcityguide;
 
 public class Attraction {
 
-    // German description of attraction
-    private String mAttractionDE;
+    // German name of the attraction
+    private String mAttractionName;
 
-    // English description of attraction
-    private String mAttractionEN;
+    // Description of the attraction
+    private String mAttractionDescription;
+
+    // Address of the attraction
+    private String mStreet;
+    private String mNumber;
+    private String mPostalCode;
+    private String mCity;
 
     /**
      * Constructor
      */
-    public Attraction(String attractionDE, String attractionEN) {
-        mAttractionDE = attractionDE;
-        mAttractionEN = attractionEN;
+    public Attraction(String attractionName, String attractionDescription,
+                      String street, String number, String postalCode, String city) {
+        mAttractionName = attractionName;
+        mAttractionDescription = attractionDescription;
+        mStreet = street;
+        mNumber = number;
+        mPostalCode = postalCode;
+        mCity = city;
     }
 
     /**
-     * Get the german attraction description
+     * Get the name of the attraction
      */
-    public String getmAttractionDE() {
-        return mAttractionDE;
+    public String getmAttractionName() {
+        return mAttractionName;
     }
 
     /**
-     * Get the english attraction description
+     * Get the description of the attraction
      */
-    public String getmAttractionEN() {
-        return mAttractionEN;
+    public String getmAttractionDescription() {
+        return mAttractionDescription;
+    }
+
+    /**
+     * Get the street address
+     */
+    public String getmStreet() {
+        return mStreet;
+    }
+
+    /**
+     * Get the address number
+     */
+    public String getmNumber() {
+        return mNumber;
+    }
+
+    /**
+     *  Get the postal code
+     */
+    public String getmPostalCode() {
+        return mPostalCode;
+    }
+
+    /**
+     * Get the city
+     */
+    public String getmCity() {
+        return mCity;
     }
 }
