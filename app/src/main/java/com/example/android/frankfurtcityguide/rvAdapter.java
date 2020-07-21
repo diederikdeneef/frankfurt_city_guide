@@ -36,8 +36,8 @@ public class rvAdapter extends RecyclerView.Adapter<rvAdapter.ViewHolder> {
     public void onBindViewHolder(@NonNull rvAdapter.ViewHolder holder, int position) {
         Attraction attraction = mData.get(position);
         //String attraction = mData.get(position).getmAttractionDE();
-        holder.germanDescription.setText(attraction.getmAttractionDE());
-        holder.englishDescription.setText(attraction.getmAttractionEN());
+        holder.attractionName.setText(attraction.getmAttractionDE());
+        holder.attractionDescription.setText(attraction.getmAttractionEN());
     }
 
     // total number of rows
@@ -47,13 +47,13 @@ public class rvAdapter extends RecyclerView.Adapter<rvAdapter.ViewHolder> {
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
-        TextView germanDescription;
-        TextView englishDescription;
+        TextView attractionName;
+        TextView attractionDescription;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
-            germanDescription = itemView.findViewById(R.id.german_description);
-            englishDescription = itemView.findViewById(R.id.english_description);
+            attractionName = itemView.findViewById(R.id.attraction_name);
+            attractionDescription = itemView.findViewById(R.id.description);
         }
     }
 }
