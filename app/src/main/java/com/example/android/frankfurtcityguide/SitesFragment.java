@@ -3,6 +3,8 @@ package com.example.android.frankfurtcityguide;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,10 +12,10 @@ import android.view.ViewGroup;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link SitesFragment#newInstance} factory method to
- * create an instance of this fragment.
  */
 public class SitesFragment extends Fragment {
+
+    private RecyclerView recyclerView;
 
 //    // TODO: Rename parameter arguments, choose names that match
 //    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -59,6 +61,25 @@ public class SitesFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_sites, container, false);
+        View rootView = inflater.inflate(R.layout.fragment_sites, container, false);
+
+        String[] data = new String[50];
+        for (int i = 1; i < 50; i++) {
+            data[i] = "bladiebla " + i;
+        }
+
+        // Create the recycler view
+        recyclerView = rootView.findViewById(R.id.recyclerview);
+        recyclerView.setHasFixedSize(true);
+
+        // Set a layout manager
+        LinearLayoutManager layoutManager = new LinearLayoutManager(rootView.getContext());
+        recyclerView.setLayoutManager(layoutManager);
+
+        // Set the adapter
+        rvAdapter adapter = new rvAdapter(getContext(),data);
+        recyclerView.setAdapter(adapter);
+
+        return rootView;
     }
 }
