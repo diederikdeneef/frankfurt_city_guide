@@ -9,14 +9,16 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import java.util.ArrayList;
+
 public class rvAdapter extends RecyclerView.Adapter<rvAdapter.ViewHolder> {
 
     // Variables
-    private String[] mData;
+    private ArrayList<Attraction> mData;
     private LayoutInflater mInflater;
 
     // Constructor
-    rvAdapter(Context context, String[] data) {
+    rvAdapter(Context context, ArrayList<Attraction> data) {
         this.mInflater = LayoutInflater.from(context);
         this.mData = data;
     }
@@ -32,23 +34,26 @@ public class rvAdapter extends RecyclerView.Adapter<rvAdapter.ViewHolder> {
     // Bind data to the TextView in each recycler row item
     @Override
     public void onBindViewHolder(@NonNull rvAdapter.ViewHolder holder, int position) {
-        String randomText = mData[position];
-        holder.germanDescription.setText(randomText);
+        Attraction attraction = mData.get(position);
+        //String attraction = mData.get(position).getmAttractionDE();
+        holder.germanDescription.setText(attraction.getmAttractionDE());
+        holder.englishDescription.setText(attraction.getmAttractionEN());
     }
 
     // total number of rows
     @Override
     public int getItemCount() {
-        return mData.length;
+        return mData.size();
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
         TextView germanDescription;
-//        TextView englishDescription;
+        TextView englishDescription;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             germanDescription = itemView.findViewById(R.id.german_description);
+            englishDescription = itemView.findViewById(R.id.english_description);
         }
     }
 }

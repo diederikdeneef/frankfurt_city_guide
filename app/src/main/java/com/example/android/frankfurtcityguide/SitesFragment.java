@@ -10,6 +10,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import java.util.ArrayList;
+
 /**
  * A simple {@link Fragment} subclass.
  */
@@ -63,10 +65,29 @@ public class SitesFragment extends Fragment {
         // Inflate the layout for this fragment
         View rootView = inflater.inflate(R.layout.fragment_sites, container, false);
 
-        String[] data = new String[50];
-        for (int i = 1; i < 50; i++) {
-            data[i] = "bladiebla " + i;
-        }
+//        String[] data = new String[50];
+//        for (int i = 1; i < 50; i++) {
+//            data[i] = "bladiebla " + i;
+//        }
+
+        ArrayList<Attraction> attractions = new ArrayList<>();
+        attractions.add(new Attraction("Römerberg", "Romer"));
+        attractions.add(new Attraction("Römerberg", "Romer"));
+        attractions.add(new Attraction("Römerberg", "Romer"));
+        attractions.add(new Attraction("Römerberg", "Romer"));
+        attractions.add(new Attraction("Römerberg", "Romer"));
+        attractions.add(new Attraction("Römerberg", "Romer"));
+        attractions.add(new Attraction("Römerberg", "Romer"));
+        attractions.add(new Attraction("Römerberg", "Romer"));
+        attractions.add(new Attraction("Römerberg", "Romer"));
+        attractions.add(new Attraction("Römerberg", "Romer"));
+        attractions.add(new Attraction("Römerberg", "Romer"));
+        attractions.add(new Attraction("Römerberg", "Romer"));
+        attractions.add(new Attraction("Römerberg", "Romer"));
+        attractions.add(new Attraction("Römerberg", "Romer"));
+        attractions.add(new Attraction("Römerberg", "Romer"));
+        attractions.add(new Attraction("Römerberg", "Romer"));
+
 
         // Create the recycler view
         recyclerView = rootView.findViewById(R.id.recyclerview);
@@ -77,7 +98,7 @@ public class SitesFragment extends Fragment {
         recyclerView.setLayoutManager(layoutManager);
 
         // Set the adapter
-        rvAdapter adapter = new rvAdapter(getContext(),data);
+        rvAdapter adapter = new rvAdapter(getContext(),attractions);
         recyclerView.setAdapter(adapter);
 
         return rootView;
