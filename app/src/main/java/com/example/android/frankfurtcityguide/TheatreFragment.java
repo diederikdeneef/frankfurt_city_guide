@@ -3,62 +3,79 @@ package com.example.android.frankfurtcityguide;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import java.util.ArrayList;
+
 /**
- * A simple {@link Fragment} subclass.
- * Use the {@link TheatreFragment#newInstance} factory method to
- * create an instance of this fragment.
+ * {@link Fragment} that displays the Theatres in Frankfurt
  */
 public class TheatreFragment extends Fragment {
 
-//    // TODO: Rename parameter arguments, choose names that match
-//    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-//    private static final String ARG_PARAM1 = "param1";
-//    private static final String ARG_PARAM2 = "param2";
-//
-//    // TODO: Rename and change types of parameters
-//    private String mParam1;
-//    private String mParam2;
-//
-//    public TheathreFragment() {
-//        // Required empty public constructor
-//    }
-//
-//    /**
-//     * Use this factory method to create a new instance of
-//     * this fragment using the provided parameters.
-//     *
-//     * @param param1 Parameter 1.
-//     * @param param2 Parameter 2.
-//     * @return A new instance of fragment TheathreFragment.
-//     */
-//    // TODO: Rename and change types and number of parameters
-//    public static TheathreFragment newInstance(String param1, String param2) {
-//        TheathreFragment fragment = new TheathreFragment();
-//        Bundle args = new Bundle();
-//        args.putString(ARG_PARAM1, param1);
-//        args.putString(ARG_PARAM2, param2);
-//        fragment.setArguments(args);
-//        return fragment;
-//    }
-//
-//    @Override
-//    public void onCreate(Bundle savedInstanceState) {
-//        super.onCreate(savedInstanceState);
-//        if (getArguments() != null) {
-//            mParam1 = getArguments().getString(ARG_PARAM1);
-//            mParam2 = getArguments().getString(ARG_PARAM2);
-//        }
-//    }
+    private RecyclerView recyclerView;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_theatre, container, false);
+        View rootView = inflater.inflate(R.layout.fragment_theatre, container, false);
+
+        // Data to populate the recycler view
+
+        ArrayList<Attraction> attractions = new ArrayList<>();
+        attractions.add(new Attraction("Alte Oper",
+                "Destroyed by Allied bombing in 1944, Frankfurt's beautifully reconstructed opera house was reopened in 1981. It's now a major venue for concerts and operas.",
+                "Opernplatz",
+                "1",
+                "60311",
+                "Frankfurt am Main",
+                R.drawable.alteoper));
+        attractions.add(new Attraction("The English Theatre Frankfurt",
+                "The English Theatre Frankfurt is a 300-seat theatre located at the Gallileo skyscraper.",
+                "Gallusanlage",
+                "7",
+                "60329",
+                "Frankfurt am Main",
+                R.drawable.english_theatre));
+        attractions.add(new Attraction("Oper Frankfurt",
+                "The Oper Frankfurt is one of the leading opera companies in Europe, and voted best \"Opera house of the year\" several times since 1996.",
+                "Untermainanlage",
+                "11",
+                "60311",
+                "Frankfurt am Main",
+                R.drawable.operfrankfurt));
+        attractions.add(new Attraction("Jazzkeller Frankfurt",
+                "Intimate, storied jazz club since 1952 with crafted cocktails & a nostalgic speakeasy fee",
+                "Kleine Bockenheimer Str.",
+                "18a",
+                "60313",
+                "Frankfurt am Main",
+                R.drawable.jazzkeller));
+        attractions.add(new Attraction("Internationales Theater Frankfurt",
+                "Authentic art from their homes, performed with heart and soul: This is what artists and ensembles from over 25 cultures offer at The International Theatre Frankfurt.",
+                "Hanauer Landstraße",
+                "5-7",
+                "60314",
+                "Frankfurt am Main",
+                R.drawable.internationalestheater));
+
+        // Create the recycler view
+        recyclerView = rootView.findViewById(R.id.recyclerview);
+        recyclerView.setHasFixedSize(true);
+
+        // Set a layout manager
+        LinearLayoutManager layoutManager = new LinearLayoutManager(rootView.getContext());
+        recyclerView.setLayoutManager(layoutManager);
+
+        // Set the adapter
+        rvAdapter adapter = new rvAdapter(getContext(),attractions);
+        recyclerView.setAdapter(adapter);
+
+        return rootView;
     }
 }
