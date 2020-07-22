@@ -15,17 +15,11 @@
             android:id="@+id/attraction_name"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="12dp"
-            android:layout_marginLeft="12dp"
-            android:layout_marginTop="4dp"
-            android:layout_marginEnd="16dp"
-            android:layout_marginRight="16dp"
-            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-            android:textColor="#DE000000"
             app:layout_constraintBottom_toTopOf="@id/media_image"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            style="@style/CardViewTitle"/>
 
         <ImageView
             android:id="@+id/media_image"
@@ -44,17 +38,11 @@
             android:id="@+id/description"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="16dp"
-            android:layout_marginBottom="16dp"
-            android:lineSpacingExtra="8dp"
-            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-            android:textColor="#DE000000"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/media_image" />
+            app:layout_constraintTop_toBottomOf="@+id/media_image"
+            style="@style/CardViewText"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

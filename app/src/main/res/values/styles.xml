@@ -7,16 +7,28 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-    <style name="DescriptionTitle">
-        <item name="android:textSize">16sp</item>
+    <style name="CardViewTitle">
+        <item name="android:textSize">20sp</item>
         <item name="android:textStyle">bold</item>
         <item name="android:layout_marginLeft">16dp</item>
-        <item name="android:layout_marginRight">8dp</item>
-        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginRight">16dp</item>
+        <item name="android:layout_marginEnd">16dp</item>
+        <item name="android:layout_marginBottom">4dp</item>
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:textColor">@color/textColor</item>
     </style>
 
-    <style name="DescriptionText">
+    <style name="CardViewText">
         <item name="android:textSize">14sp</item>
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginRight">16dp</item>
+        <item name="android:layout_marginEnd">16dp</item>
+        <item name="android:layout_marginBottom">16dp</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:lineSpacingExtra">4dp</item>
+        <item name="android:textColor">@color/textColor</item>
     </style>
 
 </resources>
