@@ -14,17 +14,22 @@ public class Attraction {
     private String mPostalCode;
     private String mCity;
 
+    // Image resource ID
+    private int mImageResourceID;
+
     /**
      * Constructor
      */
     public Attraction(String attractionName, String attractionDescription,
-                      String street, String number, String postalCode, String city) {
+                      String street, String number, String postalCode, String city,
+                      int imageResourceId) {
         mAttractionName = attractionName;
         mAttractionDescription = attractionDescription;
         mStreet = street;
         mNumber = number;
         mPostalCode = postalCode;
         mCity = city;
+        mImageResourceID = imageResourceId;
     }
 
     /**
@@ -67,5 +72,12 @@ public class Attraction {
      */
     public String getmCity() {
         return mCity;
+    }
+
+    /**
+     * Get image resource ID
+     */
+    public int getmImageResourceID() {
+        return mImageResourceID;
     }
 }

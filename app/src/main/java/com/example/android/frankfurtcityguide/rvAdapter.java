@@ -4,6 +4,7 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -37,6 +38,7 @@ public class rvAdapter extends RecyclerView.Adapter<rvAdapter.ViewHolder> {
         Attraction attraction = mData.get(position);
         holder.attractionName.setText(attraction.getmAttractionName());
         holder.attractionDescription.setText(attraction.getmAttractionDescription());
+        holder.attractionImage.setImageResource(attraction.getmImageResourceID());
     }
 
     // total number of rows
@@ -48,11 +50,13 @@ public class rvAdapter extends RecyclerView.Adapter<rvAdapter.ViewHolder> {
     public class ViewHolder extends RecyclerView.ViewHolder {
         TextView attractionName;
         TextView attractionDescription;
+        ImageView attractionImage;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             attractionName = itemView.findViewById(R.id.attraction_name);
             attractionDescription = itemView.findViewById(R.id.description);
+            attractionImage = itemView.findViewById(R.id.media_image);
         }
     }
 }
