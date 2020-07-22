@@ -10,6 +10,13 @@ import com.google.android.material.tabs.TabLayout;
 public class MainActivity extends AppCompatActivity {
 
     private static final int BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT = 1;
+    private TabLayout tabLayout;
+    private int[] tabIcons = new int[] {R.drawable.ic_place,
+            R.drawable.ic_museum,
+            R.drawable.ic_theatre,
+            R.drawable.ic_landscape,
+            R.drawable.ic_restaurant
+    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,7 +35,17 @@ public class MainActivity extends AppCompatActivity {
         viewPager.setAdapter(adapter);
 
         // Set a tab layout
-        TabLayout tabLayout = (TabLayout) findViewById(R.id.sliding_tabs);
+        tabLayout = (TabLayout) findViewById(R.id.sliding_tabs);
         tabLayout.setupWithViewPager(viewPager);
+        setupTabIcons();
+
     }
+    private void setupTabIcons() {
+        tabLayout.getTabAt(0).setIcon(tabIcons[0]);
+        tabLayout.getTabAt(1).setIcon(tabIcons[1]);
+        tabLayout.getTabAt(2).setIcon(tabIcons[2]);
+        tabLayout.getTabAt(3).setIcon(tabIcons[3]);
+        tabLayout.getTabAt(4).setIcon(tabIcons[4]);
+    }
+
 }

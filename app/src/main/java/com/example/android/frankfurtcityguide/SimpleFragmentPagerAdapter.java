@@ -4,11 +4,11 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentPagerAdapter;
 
 public class SimpleFragmentPagerAdapter extends androidx.fragment.app.FragmentPagerAdapter {
     final int NUM_PAGES = 5;
     private String[] tabTitles = new String[] {"Sites", "Musea", "Theatre", "Outdoor", "Eating"};
+
 
     // Constructor
     public SimpleFragmentPagerAdapter(@NonNull FragmentManager fm, int behavior) {
@@ -39,6 +39,11 @@ public class SimpleFragmentPagerAdapter extends androidx.fragment.app.FragmentPa
     @Nullable
     @Override
     public CharSequence getPageTitle(int position) {
-        return tabTitles[position];
+        // Return null to display tab icons only
+        return null;
+//          // Return tabTitles to return tab titles
+//        return tabTitles[position];
     }
+
+
 }
