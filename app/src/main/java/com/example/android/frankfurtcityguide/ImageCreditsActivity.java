@@ -19,10 +19,18 @@ public class ImageCreditsActivity extends AppCompatActivity {
         // Data to populate the recycler view
         ArrayList<ImageCredits> imageCredits = new ArrayList<>();
         imageCredits.add(new ImageCredits(
-                "Römerberg Frankfurt abends.jpg",
+                "Römerberg Frankfurt abends",
                 "https://de.wikipedia.org/wiki/Datei:R%C3%B6merberg_Frankfurt_abends.jpg",
                 "Thomas Wolf",
                 "https://foto-tw.de/",
+                "CC BY-SA 3.0",
+                "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
+                "crop "));
+        imageCredits.add(new ImageCredits(
+                "Frankfurter Dom Eiserner Steg",
+                "https://commons.wikimedia.org/wiki/File:Frankfurter_Dom_Eiserner_Steg.jpg",
+                "rupp.de",
+                "https://commons.wikimedia.org/wiki/User:Rupp.de~commonswiki",
                 "CC BY-SA 3.0",
                 "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
                 "crop "));
@@ -37,6 +45,8 @@ public class ImageCreditsActivity extends AppCompatActivity {
         // Set the recycler view adapter
         icAdapter adapter = new icAdapter(this, imageCredits);
         recyclerView.setAdapter(adapter);
+
+
 
 
 
