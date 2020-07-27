@@ -1,7 +1,6 @@
 package com.example.android.frankfurtcityguide;
 
 import android.content.Context;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,15 +8,13 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
-import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
 public class rvAdapter extends RecyclerView.Adapter<rvAdapter.ViewHolder> {
 
-    private Fragment currentFragment;
+    //private Fragment currentFragment;
 
 
     // Variables
@@ -34,7 +31,7 @@ public class rvAdapter extends RecyclerView.Adapter<rvAdapter.ViewHolder> {
     @NonNull
     @Override
     public rvAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = mInflater.inflate(R.layout.recycler_item, parent, false);
+        View view = mInflater.inflate(R.layout.attraction_rv_item, parent, false);
         return new ViewHolder(view);
     }
 
