@@ -1,6 +1,7 @@
 package com.example.android.frankfurtcityguide;
 
 import android.content.Context;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -8,11 +9,16 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
 public class rvAdapter extends RecyclerView.Adapter<rvAdapter.ViewHolder> {
+
+    private Fragment currentFragment;
+
 
     // Variables
     private ArrayList<Attraction> mData;
@@ -51,6 +57,8 @@ public class rvAdapter extends RecyclerView.Adapter<rvAdapter.ViewHolder> {
         TextView attractionName;
         TextView attractionDescription;
         ImageView attractionImage;
+        TextView foodName;
+        TextView foodDescription;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -58,5 +66,9 @@ public class rvAdapter extends RecyclerView.Adapter<rvAdapter.ViewHolder> {
             attractionDescription = itemView.findViewById(R.id.description);
             attractionImage = itemView.findViewById(R.id.media_image);
         }
+
     }
+
+
+
 }

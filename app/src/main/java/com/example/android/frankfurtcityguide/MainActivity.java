@@ -9,6 +9,7 @@ import com.google.android.material.tabs.TabLayout;
 
 public class MainActivity extends AppCompatActivity {
 
+    SimpleFragmentPagerAdapter adapterViewPager;
     private static final int BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT = 1;
     private TabLayout tabLayout;
     private int[] tabIcons = new int[] {R.drawable.ic_place,
@@ -29,13 +30,13 @@ public class MainActivity extends AppCompatActivity {
         ViewPager viewPager = (ViewPager) findViewById(R.id.viewpager);
 
         // Create an adapter that knows which fragment should be shown on each page
-        SimpleFragmentPagerAdapter adapter = new SimpleFragmentPagerAdapter(getSupportFragmentManager(), BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT);
+        adapterViewPager = new SimpleFragmentPagerAdapter(getSupportFragmentManager(), BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT);
 
         // Set the adapter onto the viewPager
-        viewPager.setAdapter(adapter);
+        viewPager.setAdapter(adapterViewPager);
 
         // Set a tab layout
-        tabLayout = (TabLayout) findViewById(R.id.sliding_tabs);
+        tabLayout = findViewById(R.id.sliding_tabs);
         tabLayout.setupWithViewPager(viewPager);
         setupTabIcons();
 

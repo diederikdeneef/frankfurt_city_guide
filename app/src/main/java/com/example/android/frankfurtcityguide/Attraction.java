@@ -2,7 +2,7 @@ package com.example.android.frankfurtcityguide;
 
 public class Attraction {
 
-    // German name of the attraction
+    // Name of the attraction
     private String mAttractionName;
 
     // Description of the attraction
@@ -16,6 +16,19 @@ public class Attraction {
 
     // Image resource ID
     private int mImageResourceID;
+
+
+
+    /**
+     * Constructor
+     */
+    public Attraction(String attractionName, String attractionDescription,
+                      int imageResourceId) {
+        mAttractionName = attractionName;
+        mAttractionDescription = attractionDescription;
+        mImageResourceID = imageResourceId;
+    }
+
 
     /**
      * Constructor
@@ -80,4 +93,5 @@ public class Attraction {
     public int getmImageResourceID() {
         return mImageResourceID;
     }
+
 }
