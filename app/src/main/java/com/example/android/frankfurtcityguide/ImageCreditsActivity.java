@@ -16,6 +16,7 @@ public class ImageCreditsActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.image_credits);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         // Image Credit data to populate the recycler view
         ArrayList<ImageCredits> imageCredits = new ArrayList<>();
