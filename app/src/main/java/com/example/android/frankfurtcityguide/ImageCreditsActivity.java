@@ -16,7 +16,7 @@ public class ImageCreditsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.image_credits);
 
-        // Data to populate the recycler view
+        // Image Credit data to populate the recycler view
         ArrayList<ImageCredits> imageCredits = new ArrayList<>();
         imageCredits.add(new ImageCredits(
                 "Römerberg Frankfurt abends",
@@ -318,10 +318,6 @@ public class ImageCreditsActivity extends AppCompatActivity {
         // Set the recycler view adapter
         icAdapter adapter = new icAdapter(this, imageCredits);
         recyclerView.setAdapter(adapter);
-
-
-
-
 
     }
 }
