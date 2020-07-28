@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">Frankfurt City Guide</string>
+    <string name="title_field_name">Title:</string>
+    <string name="author_field_name">Author:</string>
+    <string name="license_field_name">License:</string>
 </resources>
