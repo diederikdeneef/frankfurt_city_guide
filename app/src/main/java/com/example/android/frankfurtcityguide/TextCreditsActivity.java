@@ -1,6 +1,5 @@
 package com.example.android.frankfurtcityguide;
 
-import android.graphics.Color;
 import android.os.Bundle;
 import android.text.util.Linkify;
 import android.widget.TextView;
@@ -16,10 +15,14 @@ public class TextCreditsActivity extends AppCompatActivity {
         setContentView(R.layout.text_credits);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
+        // Find textView and set text credit text
         TextView textCreditsView = (TextView) findViewById(R.id.text_credits);
         textCreditsView.setText(R.string.text_credits);
-        Linkify.addLinks(textCreditsView, Linkify.ALL);
-        textCreditsView.setLinkTextColor(Color.parseColor("#757575"));
 
+        // Make links clickable
+        Linkify.addLinks(textCreditsView, Linkify.ALL);
+
+        // Set link text color
+        textCreditsView.setLinkTextColor(getResources().getColorStateList(R.color.textColor));
     }
 }
