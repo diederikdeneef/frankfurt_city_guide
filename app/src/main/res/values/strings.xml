@@ -3,4 +3,10 @@
     <string name="title_field_name">Title:</string>
     <string name="author_field_name">Author:</string>
     <string name="license_field_name">License:</string>
+    <string name="text_credits">The text in this App was adapted from Wikimedia Commons and
+        is licensed under the Creative Commons Attribution-ShareAlike 3.0 license
+        (https://commons.wikimedia.org/wiki/Commons:Creative_Commons_Attribution-ShareAlike_3.0_Unported_License)
+        and the GNU Free Documentation License
+        (https://commons.wikimedia.org/wiki/Commons:GNU_Free_Documentation_License
+        ).</string>
 </resources>

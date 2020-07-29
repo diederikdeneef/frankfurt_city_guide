@@ -24,6 +24,9 @@
                 android:value=".MainActivity">
             </meta-data>
         </activity>
+        <activity
+            android:name=".TextCreditsActivity">
+        </activity>
     </application>
 
 </manifest>

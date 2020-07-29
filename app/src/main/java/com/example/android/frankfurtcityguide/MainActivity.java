@@ -71,6 +71,10 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(imageCreditsIntent);
                 Toast.makeText(getApplicationContext(), "Image Credits Appear Here", Toast.LENGTH_SHORT).show();
                 return true;
+            case R.id.text_credits:
+                Intent textCreditsIntent = new Intent(this, TextCreditsActivity.class);
+                startActivity(textCreditsIntent);
+                Toast.makeText(getApplicationContext(), "Text Credits Appear Here", Toast.LENGTH_SHORT).show();
             default:
                 return super.onOptionsItemSelected(item);
         }
