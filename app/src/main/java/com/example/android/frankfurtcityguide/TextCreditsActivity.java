@@ -14,6 +14,7 @@ public class TextCreditsActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.text_credits);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         TextView textCreditsView = (TextView) findViewById(R.id.text_credits);
         textCreditsView.setText(R.string.text_credits);
