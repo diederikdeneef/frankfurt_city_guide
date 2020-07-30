@@ -1,14 +1,13 @@
 package com.example.android.frankfurtcityguide;
 
 import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
 
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
 
 import java.util.ArrayList;
 
@@ -59,7 +58,7 @@ public class EatingFragment extends Fragment {
         recyclerView.setLayoutManager(layoutManager);
 
         // Set the adapter
-        rvAdapter adapter = new rvAdapter(getContext(),localCuisine);
+        rvAdapter adapter = new rvAdapter(getContext(), localCuisine);
         recyclerView.setAdapter(adapter);
 
         return rootView;

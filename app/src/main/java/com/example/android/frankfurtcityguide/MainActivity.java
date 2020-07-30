@@ -1,15 +1,14 @@
 package com.example.android.frankfurtcityguide;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.viewpager.widget.ViewPager;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.viewpager.widget.ViewPager;
 
 import com.google.android.material.tabs.TabLayout;
 
@@ -18,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
     SimpleFragmentPagerAdapter adapterViewPager;
     private static final int BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT = 1;
     private TabLayout tabLayout;
-    private int[] tabIcons = new int[] {R.drawable.ic_place,
+    private int[] tabIcons = new int[]{R.drawable.ic_place,
             R.drawable.ic_museum,
             R.drawable.ic_theatre,
             R.drawable.ic_landscape,
@@ -45,7 +44,6 @@ public class MainActivity extends AppCompatActivity {
         tabLayout = findViewById(R.id.sliding_tabs);
         tabLayout.setupWithViewPager(viewPager);
         setupTabIcons();
-
     }
 
     private void setupTabIcons() {
@@ -67,17 +65,14 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()) {
             case R.id.image_credits:
-                Intent imageCreditsIntent = new Intent(this,ImageCreditsActivity.class);
+                Intent imageCreditsIntent = new Intent(this, ImageCreditsActivity.class);
                 startActivity(imageCreditsIntent);
-                Toast.makeText(getApplicationContext(), "Image Credits Appear Here", Toast.LENGTH_SHORT).show();
                 return true;
             case R.id.text_credits:
                 Intent textCreditsIntent = new Intent(this, TextCreditsActivity.class);
                 startActivity(textCreditsIntent);
-                Toast.makeText(getApplicationContext(), "Text Credits Appear Here", Toast.LENGTH_SHORT).show();
             default:
                 return super.onOptionsItemSelected(item);
         }
-
     }
 }

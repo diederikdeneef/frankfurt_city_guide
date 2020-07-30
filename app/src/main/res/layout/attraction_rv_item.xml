@@ -13,13 +13,13 @@
 
         <TextView
             android:id="@+id/attraction_name"
+            style="@style/CardViewTitle"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             app:layout_constraintBottom_toTopOf="@id/media_image"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            style="@style/CardViewTitle"/>
+            app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
             android:id="@+id/media_image"
@@ -33,16 +33,15 @@
             app:layout_constraintTop_toBottomOf="@id/attraction_name"
             app:layout_constraintVertical_chainStyle="packed" />
 
-
         <TextView
             android:id="@+id/description"
+            style="@style/CardViewText"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/media_image"
-            style="@style/CardViewText"/>
+            app:layout_constraintTop_toBottomOf="@+id/media_image" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

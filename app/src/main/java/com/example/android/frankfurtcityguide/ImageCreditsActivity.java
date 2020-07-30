@@ -321,9 +321,9 @@ public class ImageCreditsActivity extends AppCompatActivity {
         icAdapter adapter = new icAdapter(this, imageCredits);
         recyclerView.setAdapter(adapter);
 
+        // Set a divider between the recyclerview items
         DividerItemDecoration dividerItemDecoration = new DividerItemDecoration(
                 recyclerView.getContext(), layoutManager.getOrientation());
         recyclerView.addItemDecoration(dividerItemDecoration);
-
     }
 }

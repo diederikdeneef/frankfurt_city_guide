@@ -14,9 +14,6 @@ import java.util.ArrayList;
 
 public class rvAdapter extends RecyclerView.Adapter<rvAdapter.ViewHolder> {
 
-    //private Fragment currentFragment;
-
-
     // Variables
     private ArrayList<Attraction> mData;
     private LayoutInflater mInflater;
@@ -54,8 +51,6 @@ public class rvAdapter extends RecyclerView.Adapter<rvAdapter.ViewHolder> {
         TextView attractionName;
         TextView attractionDescription;
         ImageView attractionImage;
-        TextView foodName;
-        TextView foodDescription;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -63,9 +58,5 @@ public class rvAdapter extends RecyclerView.Adapter<rvAdapter.ViewHolder> {
             attractionDescription = itemView.findViewById(R.id.description);
             attractionImage = itemView.findViewById(R.id.media_image);
         }
-
     }
-
-
-
 }

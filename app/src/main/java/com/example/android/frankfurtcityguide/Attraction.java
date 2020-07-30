@@ -17,8 +17,6 @@ public class Attraction {
     // Image resource ID
     private int mImageResourceID;
 
-
-
     /**
      * Constructor
      */
@@ -28,7 +26,6 @@ public class Attraction {
         mAttractionDescription = attractionDescription;
         mImageResourceID = imageResourceId;
     }
-
 
     /**
      * Constructor
@@ -74,7 +71,7 @@ public class Attraction {
     }
 
     /**
-     *  Get the postal code
+     * Get the postal code
      */
     public String getmPostalCode() {
         return mPostalCode;
@@ -93,5 +90,4 @@ public class Attraction {
     public int getmImageResourceID() {
         return mImageResourceID;
     }
-
 }

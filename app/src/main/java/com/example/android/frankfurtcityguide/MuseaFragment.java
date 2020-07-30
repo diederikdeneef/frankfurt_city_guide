@@ -1,14 +1,13 @@
 package com.example.android.frankfurtcityguide;
 
 import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
 
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
 
 import java.util.ArrayList;
 
@@ -16,8 +15,6 @@ import java.util.ArrayList;
  * {@link Fragment} showing the museums
  */
 public class MuseaFragment extends Fragment {
-
-    private RecyclerView recyclerView;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -94,7 +91,7 @@ public class MuseaFragment extends Fragment {
                 R.drawable.judischesmuseum));
 
         // Create the recycler view
-        recyclerView = rootView.findViewById(R.id.recyclerview);
+        RecyclerView recyclerView = rootView.findViewById(R.id.recyclerview);
         recyclerView.setHasFixedSize(true);
 
         // Set a layout manager
@@ -102,7 +99,7 @@ public class MuseaFragment extends Fragment {
         recyclerView.setLayoutManager(layoutManager);
 
         // Set the adapter
-        rvAdapter adapter = new rvAdapter(getContext(),attractions);
+        rvAdapter adapter = new rvAdapter(getContext(), attractions);
         recyclerView.setAdapter(adapter);
 
         return rootView;

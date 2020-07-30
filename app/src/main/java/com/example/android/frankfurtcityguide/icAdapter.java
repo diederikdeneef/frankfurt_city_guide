@@ -3,11 +3,9 @@ package com.example.android.frankfurtcityguide;
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -59,7 +57,7 @@ public class icAdapter extends RecyclerView.Adapter<icAdapter.ViewHolder> {
                             Uri.parse(imageCredits.getImageSource()));
                     mContext.startActivity(browserIntent);
                 } else if (currentView.equals("image_author")) {
-                    if (!imageCredits.getmImageAuthorURL().equals("")){
+                    if (!imageCredits.getmImageAuthorURL().equals("")) {
                         Intent browserIntent = new Intent(Intent.ACTION_VIEW,
                                 Uri.parse(imageCredits.getmImageAuthorURL()));
                         mContext.startActivity(browserIntent);
@@ -96,7 +94,5 @@ public class icAdapter extends RecyclerView.Adapter<icAdapter.ViewHolder> {
             imageAuthor = itemView.findViewById(R.id.image_author);
             imageLicense = itemView.findViewById(R.id.image_license);
         }
-
     }
-
 }
