@@ -64,7 +64,7 @@ public class icAdapter extends RecyclerView.Adapter<icAdapter.ViewHolder> {
                                 Uri.parse(imageCredits.getmImageAuthorURL()));
                         mContext.startActivity(browserIntent);
                     } else {
-                        Toast.makeText(mContext, "No Author Information Available", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(mContext, R.string.toast_no_author_url, Toast.LENGTH_SHORT).show();
                     }
                 } else if (currentView.equals("image_license")) {
                     Intent browserIntent = new Intent(Intent.ACTION_VIEW,

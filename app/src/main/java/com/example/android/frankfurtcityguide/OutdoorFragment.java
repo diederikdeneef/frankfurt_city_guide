@@ -27,44 +27,50 @@ public class OutdoorFragment extends Fragment {
 
         // Data to populate the recycler view
         ArrayList<Attraction> attractions = new ArrayList<>();
-        attractions.add(new Attraction("Alter Flugplatz",
-                "The old airfield with the Tower Café is located in the green belt of Frankfurt in the middle of the landscape protection area.",
+        attractions.add(new Attraction(
+                getContext().getString(R.string.outdoor_alter_flugplatz_name),
+                getContext().getString(R.string.outdoor_alter_flugplatz_description),
                 "Am Burghof",
                 "55",
                 "60437",
                 "Frankfurt am Main - Bonames",
                  R.drawable.alten_flugplatz));
-        attractions.add(new Attraction("Grüneburgpark",
-                "The large park near the cit center offers meadows with groups of large trees, curved gravel paths, two playgrounds, and a pavillion.",
+        attractions.add(new Attraction(
+                getContext().getString(R.string.outdoor_grueneburgpark_name),
+                getContext().getString(R.string.outdoor_grueneburgpark_description),
                 "Grüneburgweg",
                 "",
                 "60323",
                 "Frankfurt am Main",
                 R.drawable.grueneburgpark));
-        attractions.add(new Attraction("Günthersburgpark",
-                "Besides a water playground for hot summer days, this park offers rare exotic species such as sequoias, black pines, empress tree, and coffee trees.",
+        attractions.add(new Attraction(
+                getContext().getString(R.string.outdoor_guenthersburgpark_name),
+                getContext().getString(R.string.outdoor_guenthersburgpark_description),
                 "Comeniusstraße",
                 "",
                 "60389",
                 "Frankfurt am Main",
                 R.drawable.guenthersburgpark));
-        attractions.add(new Attraction("GrünGürtel Frankfurt",
-                "The GrünGurtel (Green Ring) is a system of open spaces running around the core city of Frankfurt am Main. It offers orchards, nature reserves, streams, fields, parks, gardens, sports and leisure facilities.",
+        attractions.add(new Attraction(
+                getContext().getString(R.string.outdoor_gruenguertel_name),
+                getContext().getString(R.string.outdoor_gruenguertel_description),
                 "",
                 "",
                 "",
                 "Frankfurt am Main",
                 R.drawable.gruenguertel));
-        attractions.add(new Attraction("Zoo Frankfurt",
-                "The Frankfurt Zoo features over 4,500 animals of more than 510 species on more than 11 hectares. The zoo was founded in 1858 and is the second oldest zoo in Germany.",
+        attractions.add(new Attraction(
+                getContext().getString(R.string.outdoor_zoo_name),
+                getContext().getString(R.string.outdoor_zoo_description),
                 "Bernhard-Grzimek-Allee",
                 "1",
                 "60316",
                 "Frankfurt am Main",
                 R.drawable.zoofrankfurt));
 
-        attractions.add(new Attraction("Freibäder Frankfurt",
-                "A Freibad is an open air pool of which Frankfurt offers several. Check www.frankfurter-baeder.de/freibaeder/ for more information.",
+        attractions.add(new Attraction(
+                getContext().getString(R.string.outdoor_pool_name),
+                getContext().getString(R.string.outdoor_pool_description),
                 "",
                 "",
                 "",

@@ -67,85 +67,97 @@ public class SitesFragment extends Fragment {
 
         // Data to populate the recyclerview
         ArrayList<Attraction> attractions = new ArrayList<>();
-        attractions.add(new Attraction("Römerberg",
-                "The site of Frankfurt's city hall since 1405, this historic building remains the defining symbol of the city's historic past.",
+        attractions.add(new Attraction(
+                getContext().getString(R.string.sites_roemerberg_name),
+                getContext().getString(R.string.sites_roemerberg_description),
                 "Roemerberg",
                 "27",
                 "60311",
                 "Frankfurt am Main",
                 R.drawable.roemerberg));
-        attractions.add(new Attraction("Dom St. Bartolomaus",
-                "This historic cathedral served for 300 years as the site of coronation for Holy Roman Emperors.",
+        attractions.add(new Attraction(
+                getContext().getString(R.string.sites_dom_name),
+                getContext().getString(R.string.sites_dom_description),
                 "Domplatz ",
                 "1",
                 "60311",
                 "Frankfurt am Main",
                 R.drawable.frankfurter_dom));
-        attractions.add(new Attraction("Eiserne Steg",
-                "The Eiserner Steg (Iron Bridge) is a footbridge spanning the river Main in the city of Frankfurt, Germany, which connects the centre of Frankfurt with the district of Sachsenhausen",
+        attractions.add(new Attraction(
+                getContext().getString(R.string.sites_eiserne_steg_name),
+                getContext().getString(R.string.sites_eiserne_steg_description),
                 "Mainkai",
                 "39",
                 "60311",
                 "Frankfurt am Main",
                 R.drawable.eiserner_steg));
-        attractions.add(new Attraction("Hauptwache",
-                "An outdoor shopping area amidst historic buildings in the city center of Frankfurt.",
+        attractions.add(new Attraction(
+                getContext().getString(R.string.sites_hauptwache_name),
+                getContext().getString(R.string.sites_hauptwache_description),
                 "An der Hauptwache",
                 "",
                 "60311",
                 "Frankfurt am Main",
                 R.drawable.hauptwache));
-        attractions.add(new Attraction("Kleinmarkthalle",
-                "The Kleinmarkthalle is a covered market hall with 60+ vendors selling a variety of groceries, plus flowers, wine & prepared foods.",
+        attractions.add(new Attraction(
+                getContext().getString(R.string.sites_kleinmarkthalle_name),
+                getContext().getString(R.string.sites_kleinmarkthalle_description),
                 "Hasengasse",
                 "5-7",
                 "60311",
                 "Frankfurt am Main",
                 R.drawable.kleinmarkthalle));
-        attractions.add(new Attraction("SachsenHausen",
-                "A historic cobble-stoned neighborhood in Frankfurt located along the south bank of the Main River.",
+        attractions.add(new Attraction(
+                getContext().getString(R.string.sites_sachsenhausen_name),
+                getContext().getString(R.string.sites_sachsenhausen_description),
                 "",
                 "",
                 "60596",
                 "Frankfurt am Main",
                 R.drawable.sachsenhausen));
-        attractions.add(new Attraction("Alte Oper",
-                "Destroyed by Allied bombing in 1944, Frankfurt's beautifully reconstructed opera house was reopened in 1981. It's now a major venue for concerts and operas.",
+        attractions.add(new Attraction(
+                getContext().getString(R.string.sites_alte_oper_name),
+                getContext().getString(R.string.sites_alte_oper_description),
                 "Opernplatz",
                 "1",
                 "60311",
                 "Frankfurt am Main",
                 R.drawable.alteoper));
-        attractions.add(new Attraction("Palmengarten",
-                "Botanical garden with some 50 acres of tropical trees, orchids and ferns.",
+        attractions.add(new Attraction(
+                getContext().getString(R.string.sites_palmengarten_name),
+                getContext().getString(R.string.sites_palmengartem_description),
                 "Siesmayerstr.",
                 " 61",
                 "60323",
                 "Frankfurt am Main",
                 R.drawable.palmengarten));
-        attractions.add(new Attraction("Alte Nikolaikirche",
-                "This small church, dating back to the 13th century, presumably served as a royal chapel for Stauferian nobility.",
+        attractions.add(new Attraction(
+                getContext().getString(R.string.sites_nikolaikirche_name),
+                getContext().getString(R.string.sites_nikolaikirche_description),
                 "Roemerberg",
                 "11",
                 "60311",
                 "Frankfurt am Main",
                 R.drawable.altenikolaikirche));
-        attractions.add(new Attraction("Paulskirche",
-                "This church is where Germany's kings and emperors have been crowned since 1253.",
+        attractions.add(new Attraction(
+                getContext().getString(R.string.sites_paulskirche_name),
+                getContext().getString(R.string.sites_paulskirche_description),
                 "Paulsplatz",
                 "11",
                 "60311",
                 "Frankfurt am Main",
                 R.drawable.paulskirche));
-        attractions.add(new Attraction("Goethe Hause",
-                "The house in which the legendary German writer Johann Wolfgang von Goethe lived his early years.",
+        attractions.add(new Attraction(
+                getContext().getString(R.string.sites_goethe_haus_name),
+                getContext().getString(R.string.sites_goethe_haus_description),
                 "Grosser Hirschgraben",
                 "23 - 25",
                 "60311",
                 "Frankfurt am Main",
                 R.drawable.goethehaus));
-        attractions.add(new Attraction("Museumsufer",
-                "Museumsufer is a landscape of musea lined up on both banks of the river Main.",
+        attractions.add(new Attraction(
+                getContext().getString(R.string.sites_museums_ufer_name),
+                getContext().getString(R.string.sites_museums_ufer_description),
                 "",
                 "",
                 "",

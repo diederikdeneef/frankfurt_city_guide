@@ -28,57 +28,65 @@ public class MuseaFragment extends Fragment {
 
         // Data to populate the museums recycler view
         ArrayList<Attraction> attractions = new ArrayList<>();
-        attractions.add(new Attraction("Städel Museum",
-                "The Städel Museum is an art museum with one of the most important collections in Germany. The Städel Museum owns 3,100 paintings, 660 sculptures, more than 4,600 photographs and more than 100,000 drawings and prints.",
+        attractions.add(new Attraction(
+                getContext().getString(R.string.museum_staedel_name),
+                getContext().getString(R.string.museum_staedel_description),
                 "Schaumainkai",
                 "63",
                 "60596",
                 "Frankfurt am Main",
                 R.drawable.staedel_rembrandt));
-        attractions.add(new Attraction("Naturmuseum Senckenberg",
-                "The Naturmuseum Senckenberg is a museum of natural history, located in Frankfurt am Main. It is the second-largest of its type in Germany.",
+        attractions.add(new Attraction(
+                getContext().getString(R.string.museum_senckenberg_name),
+                getContext().getString(R.string.museum_senckenberg_description),
                 "Senckenberganlage",
                 "25",
                 "60325",
                 "Frankfurt am Main",
                 R.drawable.senckenberg_triceratops));
-        attractions.add(new Attraction("Historisches Museum Frankfurt",
-                "The Historical Museum situated in the 'Saalhof' has cultural and historical objects relating to the history of Frankfurt and Germany on display.",
+        attractions.add(new Attraction(
+                getContext().getString(R.string.museum_historisches_name),
+                getContext().getString(R.string.museum_historisches_description),
                 "Saalhof",
                 "1",
                 "60311",
                 "Frankfurt am Main",
                 R.drawable.historymuseum_saalhof));
-        attractions.add(new Attraction("Deutsches Architekturmuseum",
-                "The German Architecture Museum is located on the Museumsufer in Frankfurt. It houses a permanent exhibition entitled \"From Ancient Huts to Skyscrapers\" which displays the history of architectural development in Germany.",
+        attractions.add(new Attraction(
+                getContext().getString(R.string.museum_architecture_name),
+                getContext().getString(R.string.museum_architecture_description),
                 "Schaumainkai",
                 "43",
                 "60596",
                 "Frankfurt am Main",
                 R.drawable.deutsches_architektur_museum));
-        attractions.add(new Attraction("Frankfurt Archaeological Museum",
-                "Museum in a restored monastery exploring the city's history from the Neolithic to early modern eras.",
+        attractions.add(new Attraction(
+                getContext().getString(R.string.museum_archeological_name),
+                getContext().getString(R.string.museum_archeological_description),
                 "Karmelitergasse",
                 "1",
                 "60311",
                 "Frankfurt am Main",
                 R.drawable.archeologymuseum));
-        attractions.add(new Attraction("Struwwelpeter-Museum",
-                "Stalwart, cozy museum dedicated to a beloved 19th-century children’s book & its author’s life.",
+        attractions.add(new Attraction(
+                getContext().getString(R.string.museum_struwel_peter_name),
+                getContext().getString(R.string.museum_struwel_peter_description),
                 "Hinter dem Lämmchen",
                 "2-4",
                 "60311",
                 "Frankfurt am Main",
                 R.drawable.struwwel_peter_museum));
-        attractions.add(new Attraction("Junges Museum Frankfurt",
-                "Bright children's museum with interactive displays on natural science, multimedia workshops and craft activities.",
+        attractions.add(new Attraction(
+                getContext().getString(R.string.museum_junges_name),
+                getContext().getString(R.string.museum_junges_description),
                 "Saalhof",
                 "1",
                 "60311",
                 "Frankfurt am Main",
                 R.drawable.jungesmuseum));
-        attractions.add(new Attraction("Jüdisches Museum",
-                "800 Years of jewish history and culture in Frankfurt",
+        attractions.add(new Attraction(
+                getContext().getString(R.string.museum_jewish_name),
+                getContext().getString(R.string.museum_jewish_description),
                 "Untermainkai",
                 " 14-15",
                 "60311",

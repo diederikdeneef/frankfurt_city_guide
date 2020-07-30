@@ -1,12 +1,263 @@
 <resources>
     <string name="app_name">Frankfurt City Guide</string>
-    <string name="title_field_name">Title:</string>
-    <string name="author_field_name">Author:</string>
-    <string name="license_field_name">License:</string>
+
+    <!-- Text credits activity -->
     <string name="text_credits">The text in this App was adapted from Wikimedia Commons and
         is licensed under the Creative Commons Attribution-ShareAlike 3.0 license
         (https://commons.wikimedia.org/wiki/Commons:Creative_Commons_Attribution-ShareAlike_3.0_Unported_License)
         and the GNU Free Documentation License
         (https://commons.wikimedia.org/wiki/Commons:GNU_Free_Documentation_License
         ).</string>
+
+    <!-- Image credits activity -->
+    <string name="title_field_name">Title:</string>
+    <string name="author_field_name">Author:</string>
+    <string name="license_field_name">License:</string>
+
+    <string name="toast_no_author_url">No Author Information Available</string>
+
+    <string name="romer_title">Römerberg Frankfurt abends</string>
+    <string name="romer_source" formatted="false">https://de.wikipedia.org/wiki/Datei:R%C3%B6merberg_Frankfurt_abends.jpg</string>
+    <string name="romer_author">Thomas Wolf</string>
+    <string name="romer_author_url">https://foto-tw.de/</string>
+    <string name="dom_title">Frankfurter Dom Eiserner Steg</string>
+    <string name="dom_source">https://commons.wikimedia.org/wiki/File:Frankfurter_Dom_Eiserner_Steg.jpg</string>
+    <string name="dom_author">rupp.de</string>
+    <string name="dom_author_url">https://commons.wikimedia.org/wiki/User:Rupp.de~commonswiki</string>
+    <string name="eiserne_steg_title">Frankfurt Am Main-Eiserner Steg-Ansicht vom Domturm-20101024</string>
+    <string name="eiserne_steg_source">https://commons.wikimedia.org/wiki/File:Frankfurt_Am_Main-Eiserner_Steg-Ansicht_vom_Domturm-20101024.jpg</string>
+    <string name="eiserne_steg_author">Mylius</string>
+    <string name="eiserne_steg_author_url">https://commons.wikimedia.org/wiki/User:Mylius</string>
+    <string name="hauptwache_title">Hauptwache Ffm April 2010 DSC 9367</string>
+    <string name="hauptwache_source">https://commons.wikimedia.org/wiki/File:Hauptwache_Ffm_April_2010_DSC_9367.jpg</string>
+    <string name="hauptwache_author">Eva K.</string>
+    <string name="hauptwache_author_url">https://commons.wikimedia.org/wiki/User:EvaK</string>
+    <string name="kleinmarkthalle_title">Kleinmarkthalle Frankfurt Einblick</string>
+    <string name="kleinmarkthalle_source">https://commons.wikimedia.org/wiki/File:Kleinmarkthalle_Frankfurt_Einblick.jpg</string>
+    <string name="kleinmarkthalle_author">Eva K.</string>
+    <string name="kleinmarkthalle_author_url">https://commons.wikimedia.org/wiki/User:EvaK</string>
+    <string name="sachsenhausen_title">Apfelweinviertel</string>
+    <string name="sachsenhausen_source">https://commons.wikimedia.org/wiki/File:Apfelweinviertel.jpg</string>
+    <string name="sachsenhausen_author">Popie</string>
+    <string name="sachsenhausen_author_url">https://de.wikipedia.org/wiki/Benutzer_Diskussion:Popie</string>
+    <string name="alte_oper_title">Alte Oper Frankfurt abends 2011-07</string>
+    <string name="alte_oper_source">https://commons.wikimedia.org/wiki/File:Alte_Oper_Frankfurt_abends_2011-07.jpg</string>
+    <string name="alte_oper_author">Thomas Wolf</string>
+    <string name="alte_oper_author_url">https://foto-tw.de/</string>
+    <string name="palmengarten_title">Eingang Palmengarten Frankfurt</string>
+    <string name="palmengarten_source">https://commons.wikimedia.org/wiki/File:Eingang_Palmengarten_Frankfurt.JPG</string>
+    <string name="palmengarten_author">Anna16</string>
+    <string name="palmengarten_author_url">https://commons.wikimedia.org/wiki/User:Anna16</string>
+    <string name="nikolaikirche_title">Frankfurt Am Main-Alte Nikolaikirche-Detail der Dachgalerie-20081230</string>
+    <string name="nikolaikirche_source">https://commons.wikimedia.org/wiki/File:Frankfurt_Am_Main-Alte_Nikolaikirche-Detail_der_Dachgalerie-20081230.jpg</string>
+    <string name="nikolaikirche_author">Mylius</string>
+    <string name="nikolaikirche_author_url">https://commons.wikimedia.org/wiki/User:Mylius</string>
+    <string name="paulskirche_title">Paulskirche from Frankfurter Dom during Weihnachtsmarkt 2012</string>
+    <string name="paulskirche_source">https://commons.wikimedia.org/wiki/File:Paulskirche_from_Frankfurter_Dom_during_Weihnachtsmarkt_2012.jpg</string>
+    <string name="paulskirche_author">Julie Anne Workman</string>
+    <string name="paulskirche_author_url">https://commons.wikimedia.org/wiki/User:Julia_W</string>
+    <string name="goethe_haus_title">Bildergalerie@Goethe-Haus Frankfurt a.M.20170819</string>
+    <string name="goethe_haus_source">https://commons.wikimedia.org/wiki/File:Bildergalerie@Goethe-Haus_Frankfurt_a.M.20170819.jpg</string>
+    <string name="goethe_haus_author">Hajotthu</string>
+    <string name="goethe_haus_author_url">https://commons.wikimedia.org/wiki/User:Hajotthu</string>
+    <string name="museum_ufer_title">Museumsufer-teil3-ffm001</string>
+    <string name="museum_ufer_source">https://commons.wikimedia.org/wiki/File:Museumsufer-teil3-ffm001.jpg</string>
+    <string name="museum_ufer_author">dontworry</string>
+    <string name="museum_ufer_author_url">https://commons.wikimedia.org/wiki/User:Dontworry</string>
+    <string name="stadel_museum_title">Rembrandt - The Blinding of Samson - WGA19097</string>
+    <string name="stadel_museum_source">https://commons.wikimedia.org/wiki/File:Rembrandt_-_The_Blinding_of_Samson_-_WGA19097.jpg</string>
+    <string name="stadel_museum_author">Web Gallery of Art</string>
+    <string name="stadel_museum_author_url">https://en.wikipedia.org/wiki/Web_Gallery_of_Art</string>
+    <string name="senckenberg_title">LA-Triceratops mount-2</string>
+    <string name="senckenberg_source">https://commons.wikimedia.org/wiki/File:LA-Triceratops_mount-2.jpg</string>
+    <string name="senckenberg_author">Allie_Caulfield</string>
+    <string name="senckenberg_author_url" />
+    <string name="history_museum_title">Frankfurt Am Main-Saalhof-Ansicht vom Eisernen Steg</string>
+    <string name="history_museum_source">https://commons.wikimedia.org/wiki/File:Frankfurt_Am_Main-Saalhof-Ansicht_vom_Eisernen_Steg.jpg</string>
+    <string name="history_museum_author">Mylius</string>
+    <string name="history_museum_author_url">https://commons.wikimedia.org/wiki/User:Mylius</string>
+    <string name="architecture_museum_title">Frankfurt Deutsches Architektur Museum.20130603</string>
+    <string name="architecture_museum_source">https://commons.wikimedia.org/wiki/File:Frankfurt_Deutsches_Architektur_Museum.20130603.jpg</string>
+    <string name="architecture_museum_author">Epizentrum</string>
+    <string name="architecture_museum_author_url">https://commons.wikimedia.org/wiki/User:Epizentrum</string>
+    <string name="archeology_museum_title">National park stone tools</string>
+    <string name="archeology_museum_source">https://commons.wikimedia.org/wiki/File:National_park_stone_tools.jpg</string>
+    <string name="archeology_museum_author">U.S. National Park Service</string>
+    <string name="archeology_museum_author_url">https://en.wikipedia.org/wiki/National_Park_Service</string>
+    <string name="struwel_peter_museum_title">H Hoffmann Struwwel 03</string>
+    <string name="struwel_peter_museum_source">https://commons.wikimedia.org/wiki/File:H_Hoffmann_Struwwel_03.jpg</string>
+    <string name="struwel_peter_museum_author">Heinrich Hoffmann</string>
+    <string name="struwel_peter_museum_author_url">https://en.wikipedia.org/wiki/Heinrich_Hoffmann_(author)</string>
+    <string name="junges_museum_title">boy children drawing female girl kids male</string>
+    <string name="junges_museum_source">https://pixabay.com/vectors/boy-children-drawing-female-girl-1298788/</string>
+    <string name="junges_museum_author">OpenClipart-Vectors</string>
+    <string name="junges_museum_author_url">https://pixabay.com/users/openclipart-vectors-30363/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1298788</string>
+    <string name="jewish_museum_title">Frankfurt Am Main-Untermainkai 15 von Suedwesten-20100808</string>
+    <string name="jewish_museum_source">https://commons.wikimedia.org/wiki/File:Frankfurt_Am_Main-Untermainkai_15_von_Suedwesten-20100808.jpg</string>
+    <string name="jewish_museum_author">Mylius</string>
+    <string name="jewish_museum_author_url">https://commons.wikimedia.org/wiki/User:Mylius</string>
+    <string name="english_theatre_title">The English Theatre Ffm DSC 0808</string>
+    <string name="english_theatre_source">https://commons.wikimedia.org/wiki/File:The_English_Theatre_Ffm_DSC_0808.jpg</string>
+    <string name="english_theatre_author">Eva K.</string>
+    <string name="english_theatre_author_url">https://commons.wikimedia.org/wiki/User:EvaK</string>
+    <string name="oper_title">OperFrankfurtZuschauerraum</string>
+    <string name="oper_source">https://commons.wikimedia.org/wiki/File:OperFrankfurtZuschauerraum.jpg</string>
+    <string name="oper_author">Marcimarc</string>
+    <string name="oper_author_url" />
+    <string name="jazzkeller_title">piano music black keyboard musical instrument</string>
+    <string name="jazzkeller_source">https://pixabay.com/photos/piano-music-black-keyboard-musical-2222955/</string>
+    <string name="jazzkeller_author">Jazzael Rod</string>
+    <string name="jazzkeller_author_url">https://pixabay.com/users/jazz_rodv-1185914/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2222955</string>
+    <string name="international_theatre_title">drama comedy and tragedy theater performance</string>
+    <string name="international_theatre_source">https://pixabay.com/vectors/drama-comedy-and-tragedy-theater-312318/</string>
+    <string name="international_theatre_author">Clker-Free-Vector-Images</string>
+    <string name="international_theatre_author_url">https://pixabay.com/users/clker-free-vector-images-3736/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=312318</string>
+    <string name="alter_flugplatz_title">Hubschrauberabstellplätze am Alten Flugplatz</string>
+    <string name="alter_flugplatz_source" formatted="false">https://commons.wikimedia.org/wiki/File:Hubschrauberabstellpl%C3%A4tze_am_Alten_Flugplatz.jpg</string>
+    <string name="alter_flugplatz_author">Nicolas17</string>
+    <string name="alter_flugplatz_author_url">https://de.wikipedia.org/wiki/Benutzer:Nicolas17</string>
+    <string name="grueneburgpark_title">FFM Grueneburgpark Rosskastanienbaum</string>
+    <string name="grueneburgpark_source">https://commons.wikimedia.org/wiki/File:FFM_Grueneburgpark_Rosskastanienbaum.jpg</string>
+    <string name="grueneburgpark_author">Frank Behnsen</string>
+    <string name="grueneburgpark_author_url">https://commons.wikimedia.org/wiki/User:Frank_Behnsen</string>
+    <string name="guenthersburgpark_title">Frankfurt, Günthersburgpark, Wasserspiele</string>
+    <string name="guenthersburgpark_source" formatted="false">https://commons.wikimedia.org/wiki/File:Frankfurt,_G%C3%BCnthersburgpark,_Wasserspiele.JPG</string>
+    <string name="guenthersburgpark_author">Karsten11</string>
+    <string name="guenthersburgpark_author_url">https://commons.wikimedia.org/wiki/User:Karsten11</string>
+    <string name="gruenguertel_title">Enkheimer Ried</string>
+    <string name="gruenguertel_source">https://commons.wikimedia.org/wiki/File:Enkheimer_Ried.jpg</string>
+    <string name="gruenguertel_author">S. Kasten</string>
+    <string name="gruenguertel_author_url">https://commons.wikimedia.org/wiki/User:Melkom</string>
+    <string name="zoo_title">giraffe animal facial expression mimic neck mammal</string>
+    <string name="zoo_source">https://pixabay.com/photos/giraffe-animal-facial-expression-614141/</string>
+    <string name="zoo_author">Christine Sponchia</string>
+    <string name="zoo_author_url">https://pixabay.com/users/sponchia-443272/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=614141</string>
+    <string name="pool_title">woman sitting poolside swimming pool female girl</string>
+    <string name="pool_source">https://pixabay.com/photos/woman-sitting-poolside-swimming-918532/</string>
+    <string name="pool_author">Free-Photos from Pixabay</string>
+    <string name="pool_author_url">https://pixabay.com/photos/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=918532</string>
+    <string name="frankfurter_wuerstchen_title">Frankfurter wuerstchen</string>
+    <string name="frankfurter_wuerstchen_source">https://commons.wikimedia.org/wiki/File:Frankfurter_wuerstchen.jpg</string>
+    <string name="frankfurter_wuerstchen_author">WordRidden / Jessica Spengler</string>
+    <string name="frankfurter_wuerstchen_author_url">https://www.flickr.com/photos/wordridden/3456404501/</string>
+    <string name="gruene_sosse_title">Grüne Soße Ei kartoffeln</string>
+    <string name="gruene_sosse_source">https://commons.wikimedia.org/wiki/File:Gr%C3%BCne_So%C3%9Fe_Ei_kartoffeln.JPG</string>
+    <string name="gruene_sosse_author">Benreis</string>
+    <string name="gruene_sosse_author_url">https://commons.wikimedia.org/wiki/User:Benreis</string>
+    <string name="rippchen_title">Frankfurter-rippchen-mit-kraut-kpl.001-1"</string>
+    <string name="rippchen_source">https://commons.wikimedia.org/wiki/File:Frankfurter-rippchen-mit-kraut-kpl.001-1.jpg</string>
+    <string name="rippchen_author">Dontworry</string>
+    <string name="rippchen_author_url">https://commons.wikimedia.org/wiki/User:Dontworry</string>
+    <string name="handkaes_title">Handkäse mit Musik 004ok</string>
+    <string name="handkaes_source" formatted="false">https://commons.wikimedia.org/wiki/File:Handk%C3%A4se_mit_Musik_004ok.jpg</string>
+    <string name="handkaes_author">Dominic Schwöbel</string>
+    <string name="handkaes_author_url" />
+    <string name="apfelwein_title">Apfelwein Geripptes Bembel</string>
+    <string name="apfelwein_source">https://commons.wikimedia.org/wiki/File:Apfelwein_Geripptes_Bembel.jpg</string>
+    <string name="apfelwein_author">Eva K.</string>
+    <string name="apfelwein_author_url">https://commons.wikimedia.org/wiki/User:EvaK</string>
+    <string name="frankfurter_kranz_title">Frankfurter Kranz</string>
+    <string name="frankfurter_kranz_source">https://commons.wikimedia.org/wiki/File:Frankfurter_Kranz.JPG</string>
+    <string name="frankfurter_kranz_author">Claus Ableiter</string>
+    <string name="frankfurter_kranz_author_url">https://commons.wikimedia.org/wiki/User:Claus_Ableiter</string>
+
+    <string name="license_CC_BY_SA_3_0">CC BY-SA 3.0</string>
+    <string name="license_CC_BY_SA_3_0_URL">https://creativecommons.org/licenses/by-sa/3.0/deed.en</string>
+    <string name="license_CC_BY_NC_ND_3_0">CC_BY_NC_ND_3.0</string>
+    <string name="license_CC_BY_NC_ND_3_0_URL">https://creativecommons.org/licenses/by-nc-nd/3.0/</string>
+    <string name="license_CC_BY_SA_2_5">CC BY-SA 2.5</string>
+    <string name="license_CC_BY_SA_2_5_URL">https://creativecommons.org/licenses/by-sa/2.5/deed.en</string>
+    <string name="license_CC_BY_SA_2_0">CC BY-SA 2.0 DE</string>
+    <string name="license_CC_BY_SA_2_0_URL">https://creativecommons.org/licenses/by-sa/3.0/deed.en</string>
+    <string name="license_CC_BY_2_0">CC BY 2.0</string>
+    <string name="license_CC_BY_2_0_URL">https://creativecommons.org/licenses/by/2.0/deed.en</string>
+    <string name="license_public_domain">Public Domain</string>
+    <string name="license_public_domain_URL">https://en.wikipedia.org/wiki/Public_domain</string>
+    <string name="license_pixabay">Pixabay License</string>
+    <string name="license_pixabay_URL">https://pixabay.com/service/license/</string>
+
+    <string name="image_modifications">crop</string>
+
+    <!-- Sites Fragment -->
+    <string name="sites_roemerberg_name">Römerberg</string>
+    <string name="sites_roemerberg_description">The site of Frankfurt\'s city hall since 1405, this historic building remains the defining symbol of the city\'s historic past.</string>
+    <string name="sites_dom_name">Dom St. Bartolomaus</string>
+    <string name="sites_dom_description">This historic cathedral served for 300 years as the site of coronation for Holy Roman Emperors.</string>
+    <string name="sites_eiserne_steg_name">Eiserne Steg</string>
+    <string name="sites_eiserne_steg_description">The Eiserner Steg (Iron Bridge) is a footbridge spanning the river Main in the city of Frankfurt, Germany, which connects the centre of Frankfurt with the district of Sachsenhausen</string>
+    <string name="sites_hauptwache_name">Hauptwache</string>
+    <string name="sites_hauptwache_description">An outdoor shopping area amidst historic buildings in the city center of Frankfurt.</string>
+    <string name="sites_kleinmarkthalle_name">Kleinmarkthalle</string>
+    <string name="sites_kleinmarkthalle_description">The Kleinmarkthalle is a covered market hall with 60+ vendors selling a variety of groceries, plus flowers, wine and prepared foods.</string>
+    <string name="sites_sachsenhausen_name">SachsenHausen</string>
+    <string name="sites_sachsenhausen_description">A historic cobble-stoned neighborhood in Frankfurt located along the south bank of the Main River.</string>
+    <string name="sites_alte_oper_name">Alte Oper</string>
+    <string name="sites_alte_oper_description">Destroyed by Allied bombing in 1944, Frankfurt\'s beautifully reconstructed opera house was reopened in 1981. It is now a major venue for concerts and operas.</string>
+    <string name="sites_palmengarten_name">Palmengarten</string>
+    <string name="sites_palmengartem_description">Botanical garden with some 50 acres of tropical trees, orchids and ferns.</string>
+    <string name="sites_nikolaikirche_name">Alte Nikolaikirche</string>
+    <string name="sites_nikolaikirche_description">This small church, dating back to the 13th century, presumably served as a royal chapel for Stauferian nobility.</string>
+    <string name="sites_paulskirche_name">Paulskirche</string>
+    <string name="sites_paulskirche_description">This church is where Germany\'s kings and emperors have been crowned since 1253.</string>
+    <string name="sites_goethe_haus_name">Goethe Hause</string>
+    <string name="sites_goethe_haus_description">The house in which the legendary German writer Johann Wolfgang von Goethe lived his early years.</string>
+    <string name="sites_museums_ufer_name">Museumsufer</string>
+    <string name="sites_museums_ufer_description">Museumsufer is a landscape of musea lined up on both banks of the river Main.</string>
+
+    <!-- Museum fragment -->
+    <string name="museum_staedel_name">Städel Museum</string>
+    <string name="museum_staedel_description">The Städel Museum is an art museum with one of the most important collections in Germany. The Städel Museum owns 3,100 paintings, 660 sculptures, more than 4,600 photographs and more than 100,000 drawings and prints.</string>
+    <string name="museum_senckenberg_name">Naturmuseum Senckenberg</string>
+    <string name="museum_senckenberg_description">The Naturmuseum Senckenberg is a museum of natural history, located in Frankfurt am Main. It is the second-largest of its type in Germany.</string>
+    <string name="museum_historisches_name">Historisches Museum Frankfurt</string>
+    <string name="museum_historisches_description">The Historical Museum situated in the \'Saalhof\' has cultural and historical objects relating to the history of Frankfurt and Germany on display.</string>
+    <string name="museum_architecture_name">Deutsches Architekturmuseum</string>
+    <string name="museum_architecture_description">The German Architecture Museum is located on the Museumsufer in Frankfurt. It houses a permanent exhibition entitled \"From Ancient Huts to Skyscrapers\" which displays the history of architectural development in Germany.</string>
+    <string name="museum_archeological_name">Frankfurt Archaeological Museum</string>
+    <string name="museum_archeological_description">Museum in a restored monastery exploring the city\'s history from the Neolithic to early modern eras.</string>
+    <string name="museum_struwel_peter_name">Struwwelpeter-Museum</string>
+    <string name="museum_struwel_peter_description">Stalwart, cozy museum dedicated to a beloved 19th-century children\’s book and its author\’s life.</string>
+    <string name="museum_junges_name">Junges Museum Frankfurt</string>
+    <string name="museum_junges_description">Bright children\'s museum with interactive displays on natural science, multimedia workshops and craft activities.</string>
+    <string name="museum_jewish_name">Jüdisches Museum</string>
+    <string name="museum_jewish_description">800 Years of jewish history and culture in Frankfurt</string>
+
+    <!-- Theatre fragment -->
+    <string name="theatre_english_name">The English Theatre Frankfurt</string>
+    <string name="theatre_english_description">The English Theatre Frankfurt is a 300-seat theatre located at the Gallileo skyscraper.</string>
+    <string name="theatre_oper_name">Oper Frankfurt</string>
+    <string name="theatre_oper_description">The Oper Frankfurt is one of the leading opera companies in Europe, and voted best "Opera house of the year" several times since 1996.</string>
+    <string name="theatre_jazzkeller_name">Jazzkeller Frankfurt</string>
+    <string name="theatre_jazzkeller_description">Intimate, storied jazz club since 1952 with crafted cocktails &amp; a nostalgic speakeasy fee</string>
+    <string name="theatre_internationales_name">Internationales Theater Frankfurt</string>
+    <string name="theatre_internationales_description">Authentic art from their homes, performed with heart and soul: This is what artists and ensembles from over 25 cultures offer at The International Theatre Frankfurt.</string>
+
+    <!-- Outdoor fragment -->
+    <string name="outdoor_alter_flugplatz_name">Alter Flugplatz</string>
+    <string name="outdoor_alter_flugplatz_description">The old airfield with the Tower Café is located in the green belt of Frankfurt in the middle of the landscape protection area.</string>
+    <string name="outdoor_grueneburgpark_name">Grüneburgpark</string>
+    <string name="outdoor_grueneburgpark_description">The large park near the cit center offers meadows with groups of large trees, curved gravel paths, two playgrounds, and a pavillion.</string>
+    <string name="outdoor_guenthersburgpark_name">Günthersburgpark</string>
+    <string name="outdoor_guenthersburgpark_description">Besides a water playground for hot summer days, this park offers rare exotic species such as sequoias, black pines, empress tree, and coffee trees.</string>
+    <string name="outdoor_gruenguertel_name">GrünGürtel Frankfurt</string>
+    <string name="outdoor_gruenguertel_description">The GrünGurtel (Green Ring) is a system of open spaces running around the core city of Frankfurt am Main. It offers orchards, nature reserves, streams, fields, parks, gardens, sports and leisure facilities.</string>
+    <string name="outdoor_zoo_name">Zoo Frankfurt</string>
+    <string name="outdoor_zoo_description">The Frankfurt Zoo features over 4,500 animals of more than 510 species on more than 11 hectares. The zoo was founded in 1858 and is the second oldest zoo in Germany.</string>
+    <string name="outdoor_pool_name">Freibäder Frankfurt</string>
+    <string name="outdoor_pool_description">A Freibad is an open air pool of which Frankfurt offers several. Check www.frankfurter-baeder.de/freibaeder/ for more information.</string>
+
+    <!-- Eating Fragment -->
+    <string name="eating_frankfurter_wuerstchen_name">Frankfurter Würstchen</string>
+    <string name="eating_frankfurter_wuerstchen_description">A Frankfurter sausage is a thin parboiled sausage made of pure pork in a casing of sheep\'s intestine. The special taste is acquired by a special method of low temperature smoking. They are traditionally served with bread, mustard, horseradish and/or potato salad.</string>
+    <string name="eating_gruene_sosse_name">Grüne Soße</string>
+    <string name="eating_gruene_sosse_description">Frankfurt Green Sauce is a cold sauce similar to a green sauce that is made with finely chopped herbs of certain types, origins and compositions. This fresh herb composition has been a special product with a protected geographical indication since 2016, while the preparation of the actual sauce varies.</string>
+    <string name="eating_rippchen_name">Frankfurter Rippchen mit Sauerkraut</string>
+    <string name="eating_rippchen_description">Frankfurter Rippchen mit Kraut (hot cured cutlet with sauerkraut) is a traditional dish served in and around Frankfurt am Main, Germany. It consists of cured pork cutlets, slowly heated in sauerkraut or meat broth, and usually served with sauerkraut, mashed potatoes and yellow mustard.</string>
+    <string name="eating_handkaes_name">Handkäs\' mit Musik</string>
+    <string name="eating_handkaes_description">Handkäs is a regional sour milk cheese and a culinary speciality of Frankfurt and other parts of Hessen. It is often served as an appetizer or as a snack with Apfelwein and is traditionally topped with chopped onions, locally known as "Handkäse mit Musik" (literally: hand cheese with music).</string>
+    <string name="eating_applewine_name">Apfelwein - Ebbelwei, Schoppe oder Stöffche</string>
+    <string name="eating_applewine_description">Apple wine has been Frankfurt\'s most popular beverage for over 250 years. Locals traditionally enjoy it at the city\'s rustic apple wine pubs, where it is served in an earthenware jug, commonly referred to as the "bembel", and drunk from a special ribbed glass, known as the "gerippte".</string>
+    <string name="eating_frankfurter_kranz_name">Frankfurter Kranz</string>
+    <string name="eating_frankfurter_kranz_description">The Frankfurter Kranz is a sweet dessert made of a sponge cake in a ring shape covered in thick layers of butter cream and topped with caramel-covered brittle nuts, called Krokant.</string>
+
 </resources>
