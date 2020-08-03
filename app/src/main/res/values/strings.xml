@@ -259,5 +259,7 @@
     <string name="eating_applewine_description">Apple wine has been Frankfurt\'s most popular beverage for over 250 years. Locals traditionally enjoy it at the city\'s rustic apple wine pubs, where it is served in an earthenware jug, commonly referred to as the "bembel", and drunk from a special ribbed glass, known as the "gerippte".</string>
     <string name="eating_frankfurter_kranz_name">Frankfurter Kranz</string>
     <string name="eating_frankfurter_kranz_description">The Frankfurter Kranz is a sweet dessert made of a sponge cake in a ring shape covered in thick layers of butter cream and topped with caramel-covered brittle nuts, called Krokant.</string>
+    <string name="image_credits_title">Image Credits</string>
+    <string name="text_credits_title">Text Credits</string>
 
 </resources>

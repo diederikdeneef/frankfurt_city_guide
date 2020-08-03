@@ -8,12 +8,6 @@ public class Attraction {
     // Description of the attraction
     private String mAttractionDescription;
 
-    // Address of the attraction
-    private String mStreet;
-    private String mNumber;
-    private String mPostalCode;
-    private String mCity;
-
     // Image resource ID
     private int mImageResourceID;
 
@@ -24,21 +18,6 @@ public class Attraction {
                       int imageResourceId) {
         mAttractionName = attractionName;
         mAttractionDescription = attractionDescription;
-        mImageResourceID = imageResourceId;
-    }
-
-    /**
-     * Constructor
-     */
-    public Attraction(String attractionName, String attractionDescription,
-                      String street, String number, String postalCode, String city,
-                      int imageResourceId) {
-        mAttractionName = attractionName;
-        mAttractionDescription = attractionDescription;
-        mStreet = street;
-        mNumber = number;
-        mPostalCode = postalCode;
-        mCity = city;
         mImageResourceID = imageResourceId;
     }
 
@@ -54,34 +33,6 @@ public class Attraction {
      */
     public String getmAttractionDescription() {
         return mAttractionDescription;
-    }
-
-    /**
-     * Get the street address
-     */
-    public String getmStreet() {
-        return mStreet;
-    }
-
-    /**
-     * Get the address number
-     */
-    public String getmNumber() {
-        return mNumber;
-    }
-
-    /**
-     * Get the postal code
-     */
-    public String getmPostalCode() {
-        return mPostalCode;
-    }
-
-    /**
-     * Get the city
-     */
-    public String getmCity() {
-        return mCity;
     }
 
     /**

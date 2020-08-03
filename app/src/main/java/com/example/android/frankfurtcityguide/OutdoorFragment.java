@@ -27,51 +27,26 @@ public class OutdoorFragment extends Fragment {
         attractions.add(new Attraction(
                 getContext().getString(R.string.outdoor_alter_flugplatz_name),
                 getContext().getString(R.string.outdoor_alter_flugplatz_description),
-                "Am Burghof",
-                "55",
-                "60437",
-                "Frankfurt am Main - Bonames",
                 R.drawable.alten_flugplatz));
         attractions.add(new Attraction(
                 getContext().getString(R.string.outdoor_grueneburgpark_name),
                 getContext().getString(R.string.outdoor_grueneburgpark_description),
-                "Grüneburgweg",
-                "",
-                "60323",
-                "Frankfurt am Main",
                 R.drawable.grueneburgpark));
         attractions.add(new Attraction(
                 getContext().getString(R.string.outdoor_guenthersburgpark_name),
                 getContext().getString(R.string.outdoor_guenthersburgpark_description),
-                "Comeniusstraße",
-                "",
-                "60389",
-                "Frankfurt am Main",
                 R.drawable.guenthersburgpark));
         attractions.add(new Attraction(
                 getContext().getString(R.string.outdoor_gruenguertel_name),
                 getContext().getString(R.string.outdoor_gruenguertel_description),
-                "",
-                "",
-                "",
-                "Frankfurt am Main",
                 R.drawable.gruenguertel));
         attractions.add(new Attraction(
                 getContext().getString(R.string.outdoor_zoo_name),
                 getContext().getString(R.string.outdoor_zoo_description),
-                "Bernhard-Grzimek-Allee",
-                "1",
-                "60316",
-                "Frankfurt am Main",
                 R.drawable.zoofrankfurt));
-
         attractions.add(new Attraction(
                 getContext().getString(R.string.outdoor_pool_name),
                 getContext().getString(R.string.outdoor_pool_description),
-                "",
-                "",
-                "",
-                "Frankfurt am Main",
                 R.drawable.freibad));
 
         // Create the recycler view

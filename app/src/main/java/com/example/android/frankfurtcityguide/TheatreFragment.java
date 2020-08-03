@@ -28,42 +28,22 @@ public class TheatreFragment extends Fragment {
         attractions.add(new Attraction(
                 getContext().getString(R.string.sites_alte_oper_name),
                 getContext().getString(R.string.sites_alte_oper_description),
-                "Opernplatz",
-                "1",
-                "60311",
-                "Frankfurt am Main",
                 R.drawable.alteoper));
         attractions.add(new Attraction(
                 getContext().getString(R.string.theatre_english_name),
                 getContext().getString(R.string.theatre_english_description),
-                "Gallusanlage",
-                "7",
-                "60329",
-                "Frankfurt am Main",
                 R.drawable.english_theatre));
         attractions.add(new Attraction(
                 getContext().getString(R.string.theatre_oper_name),
                 getContext().getString(R.string.theatre_oper_description),
-                "Untermainanlage",
-                "11",
-                "60311",
-                "Frankfurt am Main",
                 R.drawable.operfrankfurt));
         attractions.add(new Attraction(
                 getContext().getString(R.string.theatre_jazzkeller_name),
                 getContext().getString(R.string.theatre_jazzkeller_description),
-                "Kleine Bockenheimer Str.",
-                "18a",
-                "60313",
-                "Frankfurt am Main",
                 R.drawable.jazzkeller));
         attractions.add(new Attraction(
                 getContext().getString(R.string.theatre_internationales_name),
                 getContext().getString(R.string.theatre_internationales_description),
-                "Hanauer Landstraße",
-                "5-7",
-                "60314",
-                "Frankfurt am Main",
                 R.drawable.internationalestheater));
 
         // Create the recycler view
